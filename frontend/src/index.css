@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-farm-50 text-gray-800 antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f2f9f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #95d199;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #66bb6a;
+}
+
+.shimmer-bg {
+  background: linear-gradient(90deg, #e0f2e1 0%, #f2f9f2 50%, #e0f2e1 100%);
+  background-size: 1000px 100%;
+}
+
+.urdu-text {
+  font-family: "Noto Nastaliq Urdu", serif;
+  direction: rtl;
+}
+
+.input {
+  @apply w-full px-4 py-2.5 rounded-xl border border-farm-200 focus:outline-none focus:ring-2 focus:ring-farm-400 text-sm;
+}
+
+/* Leaflet map container needs an explicit height or it collapses to 0 */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.prose-farm p {
+  margin-bottom: 0.6rem;
+}
+.prose-farm h2 {
+  @apply text-lg font-bold text-farm-700 mt-4 mb-2;
+}
+.prose-farm h3 {
+  @apply text-base font-semibold text-farm-600 mt-3 mb-1;
+}
+.prose-farm strong {
+  @apply text-farm-700;
+}
+.prose-farm ul {
+  @apply list-disc list-inside space-y-1;
+}
+.prose-farm table {
+  @apply w-full text-sm border-collapse my-3;
+}
+.prose-farm th,
+.prose-farm td {
+  @apply border border-farm-100 px-3 py-2 text-left;
+}
+.prose-farm th {
+  @apply bg-farm-50 font-semibold;
+}
