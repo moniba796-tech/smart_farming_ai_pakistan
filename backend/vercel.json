@@ -1,4 +1,5 @@
 {
+  "buildCommand": "echo 'Skipping local build — Vercel compiles the /api function automatically'",
   "rewrites": [
     {
       "source": "/(.*)",
