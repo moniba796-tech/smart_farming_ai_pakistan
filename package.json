@@ -1,0 +1,8 @@
+{
+  "name": "smart-farming-ai-pakistan",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ]
+}
