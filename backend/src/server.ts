@@ -8,7 +8,7 @@
  * wraps the same createApp() as a serverless function instead. Running
  * `npm run dev` or `npm start` locally still uses this file as normal.
  */
-
+import "dotenv/config";
 import { createApp } from "./app";
 import { connectDB } from "./config/db";
 
