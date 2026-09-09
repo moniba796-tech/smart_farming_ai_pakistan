@@ -1,9 +1,7 @@
 {
-  "buildCommand": "echo 'Skipping local build — Vercel compiles the /api function automatically'",
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index" }
-  ],
   "functions": {
-    "api/index.ts": { "maxDuration": 60 }
+    "api/index.ts": {
+      "maxDuration": 60
+    }
   }
 }
